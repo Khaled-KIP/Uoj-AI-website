@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Learning Roadmap — AI Club</title>
+  <meta name="description" content="Your step-by-step AI learning plan from beginner to expert." />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 90 66' fill='none'><path d='M12 56 Q12 8 29 8 Q46 8 46 32 L46 56' stroke='%230470fc' stroke-width='15' stroke-linecap='round' stroke-linejoin='round'/><path d='M46 56 Q46 8 63 8 Q80 8 80 32 L80 56' stroke='%230470fc' stroke-width='15' stroke-linecap='round' stroke-linejoin='round'/></svg>" />
+</head>
+<body>
+
+<!-- ══ NAVIGATION ══════════════════════════════════════════════ -->
+<nav class="nav">
+  <div class="container">
+    <div class="nav__inner">
+      <a href="home.html" class="logo" aria-label="AI Club Home">
+        <img src="../images/mainlogo.png" class="logo__mark" alt="AI Club" />
+        <div class="logo__text">Artificial Intelligence<small>Club</small></div>
+      </a>
+      <ul class="nav__links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="challenges.html">Challenges</a></li>
+        <li><a href="roadmap.html" class="active">Roadmap</a></li>
+      </ul>
+      <div class="nav__actions">
+        <a href="login.html" class="btn btn-outline">Sign In</a>
+        <a href="signup.html" class="btn btn-orange">Join Now</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ══ PAGE HERO ════════════════════════════════════════════════ -->
+<main class="page">
+<div class="page-hero">
+  <div style="position:absolute;top:-40px;left:50%;transform:translateX(-50%);width:700px;height:350px;background:radial-gradient(ellipse,rgba(18,187,254,.07) 0%,transparent 65%);pointer-events:none;"></div>
+  <div class="container">
+    <div class="page-hero__tag">Step-by-Step Plan</div>
+    <h1 class="anim-1">AI Learning <span class="text-gradient">Roadmap</span></h1>
+    <p class="anim-2">Go from your first Python script to building real AI systems. Three phases, no guesswork.</p>
+  </div>
+</div>
+
+<!-- ══ ROADMAP CONTENT ══════════════════════════════════════════ -->
+<section class="section">
+  <div class="container">
+    <div class="roadmap-layout">
+
+      <!-- Side nav -->
+      <aside class="roadmap-nav anim-1">
+        <div style="font-size:.68rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--text-dim);margin-bottom:.9rem;">Go to Phase</div>
+        <ul>
+          <li>
+            <a href="#beginner" class="active-phase">
+              <span class="phase-dot dot-beginner"></span>Beginner
+            </a>
+          </li>
+          <li>
+            <a href="#intermediate">
+              <span class="phase-dot dot-inter"></span>Intermediate
+            </a>
+          </li>
+          <li>
+            <a href="#advanced">
+              <span class="phase-dot dot-advanced"></span>Advanced
+            </a>
+          </li>
+        </ul>
+
+        <!-- Progress snapshot -->
+        <div class="card" style="margin-top:2rem;padding:1.25rem;">
+          <div style="font-size:.68rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--text-muted);margin-bottom:1rem;">Your Progress</div>
+          <div style="margin-bottom:1rem;">
+            <div style="display:flex;justify-content:space-between;font-size:.78rem;margin-bottom:.4rem;">
+              <span style="color:#04d464;">Beginner</span>
+              <span style="color:var(--text-muted);">—%</span>
+            </div>
+            <div class="progress-track"><div class="progress-fill" style="width:0%;background:linear-gradient(90deg,#04d464,#04d464aa);"></div></div>
+          </div>
+          <div style="margin-bottom:1rem;">
+            <div style="display:flex;justify-content:space-between;font-size:.78rem;margin-bottom:.4rem;">
+              <span style="color:var(--c-cyan);">Intermediate</span>
+              <span style="color:var(--text-muted);">—%</span>
+            </div>
+            <div class="progress-track"><div class="progress-fill" style="width:0%;"></div></div>
+          </div>
+          <div>
+            <div style="display:flex;justify-content:space-between;font-size:.78rem;margin-bottom:.4rem;">
+              <span style="color:var(--c-orange);">Advanced</span>
+              <span style="color:var(--text-muted);">—%</span>
+            </div>
+            <div class="progress-track"><div class="progress-fill" style="width:0%;background:linear-gradient(90deg,var(--c-orange),#ff9055);"></div></div>
+          </div>
+          <a href="signup.html" class="btn btn-primary btn-block" style="margin-top:1.25rem;font-size:.78rem;">Track Your Progress</a>
+        </div>
+      </aside>
+
+      <!-- Phases -->
+      <div class="roadmap-phases">
+
+        <!-- PHASE 1: BEGINNER -->
+        <div class="roadmap-phase beginner-phase" id="beginner">
+          <div class="phase-marker"></div>
+          <div class="phase-eyebrow">Phase 01 — Foundation</div>
+          <h3 class="phase-title">Beginner</h3>
+          <p class="phase-desc">
+            No AI experience needed. You'll learn the basic math and coding
+            skills used in every area of AI.
+            Estimated time: <strong style="color:var(--c-light);">4–6 weeks</strong>.
+          </p>
+          <div class="phase-steps">
+            <div class="step-card">
+              <div class="step-num">01</div>
+              <h4>Python Basics</h4>
+              <p>Variables, loops, functions, and classes. Work with data using NumPy and Pandas.</p>
+            </div>
+            <div class="step-card">
+              <div class="step-num">02</div>
+              <h4>Math for AI</h4>
+              <p>Learn the key math: linear algebra, basic calculus, probability, and statistics.</p>
+            </div>
+            <div class="step-card">
+              <div class="step-num">03</div>
+              <h4>Exploring Data</h4>
+              <p>Look at data, make charts, handle missing values, and pick useful features.</p>
+            </div>
+            <div class="step-card">
+              <div class="step-num">04</div>
+              <h4>Classic ML Models</h4>
+              <p>Linear regression, decision trees, k-NN, and k-means using scikit-learn on real data.</p>
+            </div>
+            <div class="step-card">
+              <div class="step-num">05</div>
+              <h4>Checking Your Model</h4>
+              <p>Split data for testing, use cross-validation, and learn accuracy scores like precision and recall.</p>
+            </div>
+            <div class="step-card">
+              <div class="step-num">06</div>
+              <h4>Your First Full Project</h4>
+              <p>Build a complete pipeline: load data → clean it → train a model → check results → submit.</p>
+            </div>
+          </div>
+          <div style="margin-top:1.75rem;display:flex;align-items:center;gap:1rem;">
+            <a href="challenges.html" class="btn btn-primary" style="border-color:#04d464;background:rgba(4,212,100,.1);color:#04d464;box-shadow:none;">
+              Start Beginner Challenges →
+            </a>
+            <span style="font-size:.8rem;color:var(--text-muted);">6 challenges · 750 total pts</span>
+          </div>
+        </div>
+
+        <!-- PHASE 2: INTERMEDIATE -->
+        <div class="roadmap-phase inter-phase" id="intermediate">
+          <div class="phase-marker"></div>
+          <div class="phase-eyebrow">Phase 02 — Depth</div>
+          <h3 class="phase-title">Intermediate</h3>
+          <p class="phase-desc">
+            Go deeper into neural networks, deep learning tools, and pick a focus area:
+            Computer Vision, NLP, or Reinforcement Learning.
+            Estimated time: <strong style="color:var(--c-light);">8–12 weeks</strong>.
+          </p>
+          <div class="phase-steps">
+            <div class="step-card">
+              <div class="step-num">07</div>
+              <h4>Neural Networks In Depth</h4>
+              <p>How backpropagation works, choosing activation functions, weight setup, and batch normalization.</p>
+            </div>
+            <div class="step-card">
+              <div class="step-num">08</div>
+              <h4>PyTorch Basics</h4>
+              <p>Tensors, auto-gradients, training loops, GPU speed-up, and loading data.</p>
+            </div>
+            <div class="step-card">
+              <div class="step-num">09</div>
+              <h4>Computer Vision Track</h4>
+              <p>CNNs, ResNets, reusing trained models, object detection with YOLO, and image segmentation.</p>
+            </div>
+            <div class="step-card">
+              <div class="step-num">10</div>
+              <h4>NLP Track</h4>
+              <p>Tokenization, word vectors, RNNs, LSTMs, attention, and fine-tuning BERT.</p>
+            </div>
+            <div class="step-card">
+              <div class="step-num">11</div>
+              <h4>Reinforcement Learning</h4>
+              <p>MDPs, Q-learning, policy gradients, PPO, and DQN with Gym environments.</p>
+            </div>
+            <div class="step-card">
+              <div class="step-num">12</div>
+              <h4>MLOps Basics</h4>
+              <p>Track experiments with MLflow, save model versions, and build repeatable pipelines.</p>
+            </div>
+          </div>
+          <div style="margin-top:1.75rem;display:flex;align-items:center;gap:1rem;">
+            <a href="challenges.html" class="btn btn-primary" style="border-color:var(--c-cyan);background:rgba(18,187,254,.1);color:var(--c-cyan);box-shadow:none;">
+              Start Intermediate Challenges →
+            </a>
+            <span style="font-size:.8rem;color:var(--text-muted);">8 challenges · 1,820 total pts</span>
+          </div>
+        </div>
+
+        <!-- PHASE 3: ADVANCED -->
+        <div class="roadmap-phase advanced-phase" id="advanced">
+          <div class="phase-marker"></div>
+          <div class="phase-eyebrow">Phase 03 — Mastery</div>
+          <h3 class="phase-title">Advanced</h3>
+          <p class="phase-desc">
+            Learn the latest AI models, recreate research papers, and build real-world AI systems.
+            This is where you go from learner to expert.
+            Estimated time: <strong style="color:var(--c-light);">12–20 weeks</strong>.
+          </p>
+          <div class="phase-steps">
+            <div class="step-card">
+              <div class="step-num">13</div>
+              <h4>Transformers &amp; Attention</h4>
+              <p>Build the "Attention is All You Need" model from scratch. Learn about GPT, T5, and CLIP.</p>
+            </div>
+            <div class="step-card">
+              <div class="step-num">14</div>
+              <h4>Generative AI</h4>
+              <p>VAEs, GANs, and Diffusion Models. Train your own image generator and check the results.</p>
+            </div>
+            <div class="step-card">
+              <div class="step-num">15</div>
+              <h4>Large Language Models</h4>
+              <p>Fine-tune LLMs, use LoRA, RLHF, prompt tricks, RAG pipelines, and LangChain.</p>
+            </div>
+            <div class="step-card">
+              <div class="step-num">16</div>
+              <h4>Making Models Smaller</h4>
+              <p>Quantization (INT8/FP16), pruning, knowledge distillation, and deploying with TensorRT.</p>
+            </div>
+            <div class="step-card">
+              <div class="step-num">17</div>
+              <h4>Recreate a Research Paper</h4>
+              <p>Pick a recent AI paper, build it end-to-end, and present what you learned to the club.</p>
+            </div>
+            <div class="step-card">
+              <div class="step-num">18</div>
+              <h4>Final AI Project</h4>
+              <p>Design and launch a real AI app: build the API, add monitoring, and set up auto-deploy.</p>
+            </div>
+          </div>
+          <div style="margin-top:1.75rem;display:flex;align-items:center;gap:1rem;">
+            <a href="challenges.html" class="btn btn-orange">Start Advanced Challenges →</a>
+            <span style="font-size:.8rem;color:var(--text-muted);">6 challenges · 2,600 total pts</span>
+          </div>
+        </div>
+
+      </div><!-- /roadmap-phases -->
+    </div><!-- /roadmap-layout -->
+
+    <!-- Bottom CTA -->
+    <div style="text-align:center;margin-top:5rem;padding:3.5rem;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--r-lg);position:relative;overflow:hidden;">
+      <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:400px;height:200px;background:radial-gradient(ellipse,rgba(4,112,252,.09) 0%,transparent 70%);pointer-events:none;"></div>
+      <div class="section-eyebrow" style="margin-bottom:.9rem;">Ready to Start?</div>
+      <h2 style="margin-bottom:1rem;font-size:2rem;">Start Your AI Journey Today</h2>
+      <p style="color:var(--text-muted);max-width:480px;margin-inline:auto;margin-bottom:2rem;">
+        Make a free account, pick your level, and track your progress through each phase.
+      </p>
+      <div style="display:flex;align-items:center;justify-content:center;gap:1rem;flex-wrap:wrap;">
+        <a href="signup.html" class="btn btn-orange btn-lg">Create Free Account</a>
+        <a href="challenges.html" class="btn btn-outline btn-lg">Browse Challenges</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+</main>
+
+<!-- ══ FOOTER ══════════════════════════════════════════════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a href="home.html" class="logo">
+          <img src="../images/mainlogo.png" class="logo__mark" alt="AI Club" />
+          <div class="logo__text">Artificial Intelligence<small>Club</small></div>
+        </a>
+        <p>A student-led AI community focused on learning machine learning, deep learning, and AI together.</p>
+      </div>
+      <div class="footer__col">
+        <h5>Pages</h5>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="challenges.html">Challenges</a></li>
+          <li><a href="roadmap.html">Roadmap</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h5>Community</h5>
+        <ul>
+          <li><a href="#">Discord</a></li>
+          <li><a href="#">GitHub</a></li>
+          <li><a href="#">Newsletter</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h5>Account</h5>
+        <ul>
+          <li><a href="login.html">Sign In</a></li>
+          <li><a href="signup.html">Create Account</a></li>
+          <li><a href="home.html#contact">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 Artificial Intelligence Club. All rights reserved.</span>
+      <span>Build the Future.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<script>lucide.createIcons();</script>
+</body>
+</html>

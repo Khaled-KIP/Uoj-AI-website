@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Challenges — AI Club</title>
+  <meta name="description" content="Try AI challenges at every skill level." />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 90 66' fill='none'><path d='M12 56 Q12 8 29 8 Q46 8 46 32 L46 56' stroke='%230470fc' stroke-width='15' stroke-linecap='round' stroke-linejoin='round'/><path d='M46 56 Q46 8 63 8 Q80 8 80 32 L80 56' stroke='%230470fc' stroke-width='15' stroke-linecap='round' stroke-linejoin='round'/></svg>" />
+</head>
+<body>
+
+<!-- ══ NAVIGATION ══════════════════════════════════════════════ -->
+<nav class="nav">
+  <div class="container">
+    <div class="nav__inner">
+      <a href="home.html" class="logo" aria-label="AI Club Home">
+        <img src="../images/mainlogo.png" class="logo__mark" alt="AI Club" />
+        <div class="logo__text">Artificial Intelligence<small>Club</small></div>
+      </a>
+      <ul class="nav__links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="challenges.html" class="active">Challenges</a></li>
+        <li><a href="roadmap.html">Roadmap</a></li>
+      </ul>
+      <div class="nav__actions">
+        <a href="login.html" class="btn btn-outline">Sign In</a>
+        <a href="signup.html" class="btn btn-orange">Join Now</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ══ PAGE HERO ════════════════════════════════════════════════ -->
+<main class="page">
+<div class="page-hero">
+  <div style="position:absolute;top:-40px;left:50%;transform:translateX(-50%);width:600px;height:300px;background:radial-gradient(ellipse,rgba(4,112,252,.08) 0%,transparent 70%);pointer-events:none;"></div>
+  <div class="container">
+    <div class="page-hero__tag">48 Challenges Ready</div>
+    <h1 class="anim-1">Try Our <span class="text-gradient">Challenges</span></h1>
+    <p class="anim-2">Practice with real AI problems. Earn points, climb the leaderboard, and show what you can do.</p>
+  </div>
+</div>
+
+<!-- ══ CHALLENGES CONTENT ════════════════════════════════════ -->
+<section class="section">
+  <div class="container">
+
+    <!-- Stats row -->
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-bottom:2.5rem;">
+      <div class="card" style="text-align:center;padding:1.25rem;">
+        <div style="font-size:1.6rem;font-family:var(--ff-display);font-weight:900;color:var(--c-light);">18</div>
+        <div style="font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#04d464;margin-top:.25rem;">Beginner</div>
+      </div>
+      <div class="card" style="text-align:center;padding:1.25rem;">
+        <div style="font-size:1.6rem;font-family:var(--ff-display);font-weight:900;color:var(--c-light);">16</div>
+        <div style="font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--c-cyan);margin-top:.25rem;">Intermediate</div>
+      </div>
+      <div class="card" style="text-align:center;padding:1.25rem;">
+        <div style="font-size:1.6rem;font-family:var(--ff-display);font-weight:900;color:var(--c-light);">10</div>
+        <div style="font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#ff6a2e;margin-top:.25rem;">Advanced</div>
+      </div>
+      <div class="card" style="text-align:center;padding:1.25rem;">
+        <div style="font-size:1.6rem;font-family:var(--ff-display);font-weight:900;color:var(--c-light);">4</div>
+        <div style="font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#c85ef7;margin-top:.25rem;">Expert</div>
+      </div>
+    </div>
+
+    <!-- Filter bar -->
+    <div class="filter-bar">
+      <span style="font-size:.75rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--text-muted);margin-right:.5rem;">Filter:</span>
+      <a href="#" class="filter-chip active">All</a>
+      <a href="#" class="filter-chip">Beginner</a>
+      <a href="#" class="filter-chip">Intermediate</a>
+      <a href="#" class="filter-chip">Advanced</a>
+      <a href="#" class="filter-chip">Expert</a>
+      <div style="flex:1;"></div>
+      <a href="#" class="filter-chip">
+        <i data-lucide="sliders-horizontal"></i>
+        Category
+      </a>
+      <a href="#" class="filter-chip">
+        <i data-lucide="arrow-up-down"></i>
+        Sort
+      </a>
+    </div>
+
+    <!-- Challenges grid -->
+    <div class="challenges-grid">
+
+      <!-- 1: Neural Network Fundamentals -->
+      <div class="card ch-card anim-1">
+        <div class="ch-top">
+          <div class="ch-icon" style="color:var(--c-blue);">
+            <i data-lucide="network"></i>
+          </div>
+          <span class="badge badge-beginner">Beginner</span>
+        </div>
+        <div>
+          <h4 class="ch-title">Neural Network Fundamentals</h4>
+          <p class="ch-desc">Build a simple neural network from scratch using NumPy. Code the forward and backward steps by hand.</p>
+        </div>
+        <div>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:.45rem;">
+            <span style="font-size:.75rem;color:var(--text-muted);">Completion rate</span>
+            <span style="font-size:.75rem;font-weight:700;color:var(--c-cyan);">72%</span>
+          </div>
+          <div class="progress-track"><div class="progress-fill" style="width:72%;"></div></div>
+        </div>
+        <div class="ch-meta">
+          <span class="ch-meta-item"><i data-lucide="clock"></i>3h est.</span>
+          <span class="ch-meta-item"><i data-lucide="star"></i>150 pts</span>
+          <span class="ch-meta-item"><i data-lucide="users"></i>284 solved</span>
+        </div>
+      </div>
+
+      <!-- 2: Python for AI/ML -->
+      <div class="card ch-card anim-2">
+        <div class="ch-top">
+          <div class="ch-icon" style="color:var(--c-blue);">
+            <i data-lucide="code-2"></i>
+          </div>
+          <span class="badge badge-beginner">Beginner</span>
+        </div>
+        <div>
+          <h4 class="ch-title">Python for AI/ML</h4>
+          <p class="ch-desc">Learn NumPy, Pandas, and Matplotlib by exploring and charting real data.</p>
+        </div>
+        <div>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:.45rem;">
+            <span style="font-size:.75rem;color:var(--text-muted);">Completion rate</span>
+            <span style="font-size:.75rem;font-weight:700;color:var(--c-cyan);">89%</span>
+          </div>
+          <div class="progress-track"><div class="progress-fill" style="width:89%;"></div></div>
+        </div>
+        <div class="ch-meta">
+          <span class="ch-meta-item"><i data-lucide="clock"></i>2h est.</span>
+          <span class="ch-meta-item"><i data-lucide="star"></i>100 pts</span>
+          <span class="ch-meta-item"><i data-lucide="users"></i>412 solved</span>
+        </div>
+      </div>
+
+      <!-- 3: Linear Regression -->
+      <div class="card ch-card anim-3">
+        <div class="ch-top">
+          <div class="ch-icon" style="color:var(--c-blue);">
+            <i data-lucide="trending-up"></i>
+          </div>
+          <span class="badge badge-beginner">Beginner</span>
+        </div>
+        <div>
+          <h4 class="ch-title">Linear Regression Lab</h4>
+          <p class="ch-desc">Build a linear regression model step by step. Predict house prices using real data.</p>
+        </div>
+        <div>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:.45rem;">
+            <span style="font-size:.75rem;color:var(--text-muted);">Completion rate</span>
+            <span style="font-size:.75rem;font-weight:700;color:var(--c-cyan);">65%</span>
+          </div>
+          <div class="progress-track"><div class="progress-fill" style="width:65%;"></div></div>
+        </div>
+        <div class="ch-meta">
+          <span class="ch-meta-item"><i data-lucide="clock"></i>2.5h est.</span>
+          <span class="ch-meta-item"><i data-lucide="star"></i>120 pts</span>
+          <span class="ch-meta-item"><i data-lucide="users"></i>318 solved</span>
+        </div>
+      </div>
+
+      <!-- 4: Computer Vision -->
+      <div class="card ch-card anim-1">
+        <div class="ch-top">
+          <div class="ch-icon" style="color:var(--c-blue);">
+            <i data-lucide="eye"></i>
+          </div>
+          <span class="badge badge-intermediate">Intermediate</span>
+        </div>
+        <div>
+          <h4 class="ch-title">Computer Vision Basics</h4>
+          <p class="ch-desc">Train an image classifier on CIFAR-10 with PyTorch. Try to reach over 85% accuracy.</p>
+        </div>
+        <div>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:.45rem;">
+            <span style="font-size:.75rem;color:var(--text-muted);">Completion rate</span>
+            <span style="font-size:.75rem;font-weight:700;color:var(--c-cyan);">48%</span>
+          </div>
+          <div class="progress-track"><div class="progress-fill" style="width:48%;"></div></div>
+        </div>
+        <div class="ch-meta">
+          <span class="ch-meta-item"><i data-lucide="clock"></i>6h est.</span>
+          <span class="ch-meta-item"><i data-lucide="star"></i>280 pts</span>
+          <span class="ch-meta-item"><i data-lucide="users"></i>196 solved</span>
+        </div>
+      </div>
+
+      <!-- 5: NLP -->
+      <div class="card ch-card anim-2">
+        <div class="ch-top">
+          <div class="ch-icon" style="color:var(--c-blue);">
+            <i data-lucide="message-square"></i>
+          </div>
+          <span class="badge badge-intermediate">Intermediate</span>
+        </div>
+        <div>
+          <h4 class="ch-title">NLP Sentiment Analysis</h4>
+          <p class="ch-desc">Fine-tune a BERT model to sort customer reviews as positive or negative. Measure how well it works.</p>
+        </div>
+        <div>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:.45rem;">
+            <span style="font-size:.75rem;color:var(--text-muted);">Completion rate</span>
+            <span style="font-size:.75rem;font-weight:700;color:var(--c-cyan);">39%</span>
+          </div>
+          <div class="progress-track"><div class="progress-fill" style="width:39%;"></div></div>
+        </div>
+        <div class="ch-meta">
+          <span class="ch-meta-item"><i data-lucide="clock"></i>5h est.</span>
+          <span class="ch-meta-item"><i data-lucide="star"></i>260 pts</span>
+          <span class="ch-meta-item"><i data-lucide="users"></i>153 solved</span>
+        </div>
+      </div>
+
+      <!-- 6: Reinforcement Learning -->
+      <div class="card ch-card anim-3">
+        <div class="ch-top">
+          <div class="ch-icon" style="color:var(--c-blue);">
+            <i data-lucide="gamepad-2"></i>
+          </div>
+          <span class="badge badge-intermediate">Intermediate</span>
+        </div>
+        <div>
+          <h4 class="ch-title">Reinforcement Learning</h4>
+          <p class="ch-desc">Build an AI agent that learns to balance a pole and land a rocket using OpenAI Gym.</p>
+        </div>
+        <div>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:.45rem;">
+            <span style="font-size:.75rem;color:var(--text-muted);">Completion rate</span>
+            <span style="font-size:.75rem;font-weight:700;color:var(--c-cyan);">31%</span>
+          </div>
+          <div class="progress-track"><div class="progress-fill" style="width:31%;"></div></div>
+        </div>
+        <div class="ch-meta">
+          <span class="ch-meta-item"><i data-lucide="clock"></i>8h est.</span>
+          <span class="ch-meta-item"><i data-lucide="star"></i>320 pts</span>
+          <span class="ch-meta-item"><i data-lucide="users"></i>118 solved</span>
+        </div>
+      </div>
+
+      <!-- 7: Deep Learning Architecture -->
+      <div class="card ch-card anim-1">
+        <div class="ch-top">
+          <div class="ch-icon" style="color:#ff6a2e;">
+            <i data-lucide="layers"></i>
+          </div>
+          <span class="badge badge-advanced">Advanced</span>
+        </div>
+        <div>
+          <h4 class="ch-title">Deep Learning Architecture</h4>
+          <p class="ch-desc">Design and train a deep neural network with skip connections to classify images on a large dataset.</p>
+        </div>
+        <div>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:.45rem;">
+            <span style="font-size:.75rem;color:var(--text-muted);">Completion rate</span>
+            <span style="font-size:.75rem;font-weight:700;color:var(--c-cyan);">22%</span>
+          </div>
+          <div class="progress-track"><div class="progress-fill" style="width:22%;background:linear-gradient(90deg,var(--c-orange),#ff9055);"></div></div>
+        </div>
+        <div class="ch-meta">
+          <span class="ch-meta-item"><i data-lucide="clock"></i>12h est.</span>
+          <span class="ch-meta-item"><i data-lucide="star"></i>480 pts</span>
+          <span class="ch-meta-item"><i data-lucide="users"></i>74 solved</span>
+        </div>
+      </div>
+
+      <!-- 8: Transformer from Scratch -->
+      <div class="card ch-card anim-2">
+        <div class="ch-top">
+          <div class="ch-icon" style="color:#ff6a2e;">
+            <i data-lucide="type"></i>
+          </div>
+          <span class="badge badge-advanced">Advanced</span>
+        </div>
+        <div>
+          <h4 class="ch-title">Transformer from Scratch</h4>
+          <p class="ch-desc">Build the full Transformer model from scratch — attention, position encoding, and encoder-decoder — for translating text.</p>
+        </div>
+        <div>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:.45rem;">
+            <span style="font-size:.75rem;color:var(--text-muted);">Completion rate</span>
+            <span style="font-size:.75rem;font-weight:700;color:var(--c-cyan);">15%</span>
+          </div>
+          <div class="progress-track"><div class="progress-fill" style="width:15%;background:linear-gradient(90deg,var(--c-orange),#ff9055);"></div></div>
+        </div>
+        <div class="ch-meta">
+          <span class="ch-meta-item"><i data-lucide="clock"></i>16h est.</span>
+          <span class="ch-meta-item"><i data-lucide="star"></i>560 pts</span>
+          <span class="ch-meta-item"><i data-lucide="users"></i>48 solved</span>
+        </div>
+      </div>
+
+      <!-- 9: AI Ethics -->
+      <div class="card ch-card anim-3">
+        <div class="ch-top">
+          <div class="ch-icon" style="color:var(--c-blue);">
+            <i data-lucide="scale"></i>
+          </div>
+          <span class="badge badge-intermediate">Intermediate</span>
+        </div>
+        <div>
+          <h4 class="ch-title">AI Ethics &amp; Fairness</h4>
+          <p class="ch-desc">Check an AI system for unfair bias. Apply fixes and measure how fair the results become.</p>
+        </div>
+        <div>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:.45rem;">
+            <span style="font-size:.75rem;color:var(--text-muted);">Completion rate</span>
+            <span style="font-size:.75rem;font-weight:700;color:var(--c-cyan);">55%</span>
+          </div>
+          <div class="progress-track"><div class="progress-fill" style="width:55%;"></div></div>
+        </div>
+        <div class="ch-meta">
+          <span class="ch-meta-item"><i data-lucide="clock"></i>4h est.</span>
+          <span class="ch-meta-item"><i data-lucide="star"></i>220 pts</span>
+          <span class="ch-meta-item"><i data-lucide="users"></i>167 solved</span>
+        </div>
+      </div>
+
+      <!-- 10: GANs -->
+      <div class="card ch-card anim-1">
+        <div class="ch-top">
+          <div class="ch-icon" style="color:#c85ef7;">
+            <i data-lucide="sparkles"></i>
+          </div>
+          <span class="badge badge-expert">Expert</span>
+        </div>
+        <div>
+          <h4 class="ch-title">Generative Adversarial Networks</h4>
+          <p class="ch-desc">Build and train a GAN to create realistic images. Measure quality with standard scores.</p>
+        </div>
+        <div>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:.45rem;">
+            <span style="font-size:.75rem;color:var(--text-muted);">Completion rate</span>
+            <span style="font-size:.75rem;font-weight:700;color:var(--c-cyan);">8%</span>
+          </div>
+          <div class="progress-track"><div class="progress-fill" style="width:8%;background:linear-gradient(90deg,#c85ef7,#e74904);"></div></div>
+        </div>
+        <div class="ch-meta">
+          <span class="ch-meta-item"><i data-lucide="clock"></i>20h est.</span>
+          <span class="ch-meta-item"><i data-lucide="star"></i>750 pts</span>
+          <span class="ch-meta-item"><i data-lucide="users"></i>22 solved</span>
+        </div>
+      </div>
+
+      <!-- 11: Model Optimization -->
+      <div class="card ch-card anim-2">
+        <div class="ch-top">
+          <div class="ch-icon" style="color:#ff6a2e;">
+            <i data-lucide="settings-2"></i>
+          </div>
+          <span class="badge badge-advanced">Advanced</span>
+        </div>
+        <div>
+          <h4 class="ch-title">Model Optimization &amp; Pruning</h4>
+          <p class="ch-desc">Shrink a model by 70% while keeping 95%+ of its accuracy using pruning and compression.</p>
+        </div>
+        <div>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:.45rem;">
+            <span style="font-size:.75rem;color:var(--text-muted);">Completion rate</span>
+            <span style="font-size:.75rem;font-weight:700;color:var(--c-cyan);">18%</span>
+          </div>
+          <div class="progress-track"><div class="progress-fill" style="width:18%;background:linear-gradient(90deg,var(--c-orange),#ff9055);"></div></div>
+        </div>
+        <div class="ch-meta">
+          <span class="ch-meta-item"><i data-lucide="clock"></i>10h est.</span>
+          <span class="ch-meta-item"><i data-lucide="star"></i>440 pts</span>
+          <span class="ch-meta-item"><i data-lucide="users"></i>61 solved</span>
+        </div>
+      </div>
+
+      <!-- 12: Multi-Agent -->
+      <div class="card ch-card anim-3">
+        <div class="ch-top">
+          <div class="ch-icon" style="color:#c85ef7;">
+            <i data-lucide="bot"></i>
+          </div>
+          <span class="badge badge-expert">Expert</span>
+        </div>
+        <div>
+          <h4 class="ch-title">Multi-Agent Systems</h4>
+          <p class="ch-desc">Create environments where multiple AI agents work together or compete. Watch new strategies appear.</p>
+        </div>
+        <div>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:.45rem;">
+            <span style="font-size:.75rem;color:var(--text-muted);">Completion rate</span>
+            <span style="font-size:.75rem;font-weight:700;color:var(--c-cyan);">5%</span>
+          </div>
+          <div class="progress-track"><div class="progress-fill" style="width:5%;background:linear-gradient(90deg,#c85ef7,#e74904);"></div></div>
+        </div>
+        <div class="ch-meta">
+          <span class="ch-meta-item"><i data-lucide="clock"></i>24h est.</span>
+          <span class="ch-meta-item"><i data-lucide="star"></i>900 pts</span>
+          <span class="ch-meta-item"><i data-lucide="users"></i>11 solved</span>
+        </div>
+      </div>
+
+    </div><!-- /challenges-grid -->
+
+    <div style="text-align:center;margin-top:3rem;">
+      <a href="#" class="btn btn-outline btn-lg">Load More Challenges</a>
+    </div>
+
+  </div>
+</section>
+</main>
+
+<!-- ══ FOOTER ══════════════════════════════════════════════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a href="home.html" class="logo">
+          <img src="../images/mainlogo.png" class="logo__mark" alt="AI Club" />
+          <div class="logo__text">Artificial Intelligence<small>Club</small></div>
+        </a>
+        <p>A student-led AI community focused on learning machine learning, deep learning, and AI together.</p>
+      </div>
+      <div class="footer__col">
+        <h5>Pages</h5>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="challenges.html">Challenges</a></li>
+          <li><a href="roadmap.html">Roadmap</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h5>Community</h5>
+        <ul>
+          <li><a href="#">Discord</a></li>
+          <li><a href="#">GitHub</a></li>
+          <li><a href="#">Newsletter</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h5>Account</h5>
+        <ul>
+          <li><a href="login.html">Sign In</a></li>
+          <li><a href="signup.html">Create Account</a></li>
+          <li><a href="home.html#contact">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 Artificial Intelligence Club. All rights reserved.</span>
+      <span>Build the Future.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<script>lucide.createIcons();</script>
+</body>
+</html>
